@@ -1,6 +1,6 @@
 {
   "name": "@folio/stripes-logger",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple category-based logging for Stripes",
   "repository": "folio-org/stripes-logger",
   "publishConfig": {
