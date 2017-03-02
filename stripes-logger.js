@@ -1,16 +1,16 @@
 module.exports = class {
   constructor(l, p, t) {
-    this.level = l || '';
+    this.categories = l || '';
     this.prefix = p || undefined;
     this.timestamp = t || false;
   }
 
-  setLevel(val) { this.level = val; }
+  setCategories(val) { this.categories = val; }
   setPrefix(val) { this.prefix = val; }
   setTimestamp(val) { this.timestamp = val; }
 
   log(level, ...args) {
-    if (!this.level.split(',').some(x => x === level))
+    if (!this.categories.split(',').some(x => x === level))
       return;
 
     let s = '';

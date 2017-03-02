@@ -2,7 +2,7 @@ const Logger = require('./stripes-logger.js');
 
 const l = new Logger('redux,action');
 
-l.setLevel('redux,path,cql,error,action');
+l.setCategories('redux,path,cql,error,action');
 l.setPrefix('stripes');
 l.setTimestamp(true);
 
