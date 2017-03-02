@@ -26,7 +26,7 @@ This pulls in the library and creates a logger which is configured to emit messa
 
 ## API
 
-The API is gratifyingly small: a single class with a constructor, three trivial setter methods and a `log` method.
+The API is gratifyingly small: a single class with a constructor, three trivial setter methods and two proper methods.
 
 ### Constructor
 
@@ -62,3 +62,8 @@ l.log('hostname', () => lookUpHostNameByIP(hostName()));
 ```
 
 Output is always to the JavaScript console.
+
+### Category inquiry
+
+You can ask a logger whether it has a particular category enabled using `l.hasCategory(cat)`. This is a rather ugly back-door, but it's necessary for cases where another library does its own console-logging -- for example, [redux-logger](https://github.com/evgenyrodionov/redux-logger) -- and you need to create a predicate for it based on the logger's categories.
+
