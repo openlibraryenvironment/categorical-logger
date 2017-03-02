@@ -35,7 +35,7 @@ of configuration. That configuration can be passed in when the object
 is created, or subsequently changed using the three setters. The
 constructor arguments, all optional, are:
 
-1. `level`. A comma-separated list of zero or more short strings, each of which is the name of a logging category. There is no predefined list of such categories: each application is welcome to make up its own.
+1. `categories`. A comma-separated list of zero or more short strings, each of which is the name of a logging category. There is no predefined list of such categories: each application is welcome to make up its own.
 
 2. `prefix`. If provided, a short string which is emitted at the beginning of each log message.
 
@@ -45,7 +45,7 @@ constructor arguments, all optional, are:
 
 There are three of these, corresponding to the three arguments to the constructor:
 
-1. `l.setLevel(STRING)` -- sets the active categories.
+1. `l.setCategories(STRING)` -- sets the active categories.
 
 1. `l.setPrefix(STRING)` -- sets the prefix.
 
@@ -53,9 +53,9 @@ There are three of these, corresponding to the three arguments to the constructo
 
 ### Logging
 
-All logging is done with a single method, `l.log(STRING, ARGS)`. Its first argument is a string naming one of the application's logging categories, and the subsequent arguments are strings or other values to be included in the log message. The message is emitted only if the specified category is one of those congfigured in the logger.
+All logging is done with a single method, `l.log(STRING, ...VALUES)`. Its first argument is a string naming one of the application's logging categories, and the subsequent arguments are values to be included in the log message. The message is emitted only if the specified category is one of those congfigured in the logger.
 
-If there is exactly one argument, and that argument is a function, when it is evaluated and its return value is logged. This is useful is generation of the log message is itself an expensive operation, and should not be done if the message is not going to be emitted anyway (because its category is not configured). Use it like this;
+If there is exactly one value, and that value is a function, when it is evaluated and its return value is logged. This is useful when generation of the log message is itself an expensive operation that should not be done if the message is not going to be emitted anyway (because its category is not configured). Use it like this;
 
 ```
 l.log('hostname', () => lookUpHostNameByIP(hostName()));
