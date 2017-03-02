@@ -9,8 +9,12 @@ module.exports = class {
   setPrefix(val) { this.prefix = val; }
   setTimestamp(val) { this.timestamp = val; }
 
+  hasCategory(cat) {
+    return this.categories.split(',').some(x => x === cat);
+  }
+
   log(cat, ...args) {
-    if (!this.categories.split(',').some(x => x === cat))
+    if (!this.hasCategory(cat))
       return;
 
     let s = '';
