@@ -9,8 +9,8 @@ module.exports = class {
   setPrefix(val) { this.prefix = val; }
   setTimestamp(val) { this.timestamp = val; }
 
-  log(level, ...args) {
-    if (!this.categories.split(',').some(x => x === level))
+  log(cat, ...args) {
+    if (!this.categories.split(',').some(x => x === cat))
       return;
 
     let s = '';
@@ -20,6 +20,6 @@ module.exports = class {
       s += new Date(Date.now()).toISOString() + ' ';
 
     const output = (args.length === 1 && typeof args[0] === 'function') ? args[0]() : args;
-    console.log(`${s}(${level})`, ...output);
+    console.log(`${s}(${cat})`, ...output);
   }
 };
