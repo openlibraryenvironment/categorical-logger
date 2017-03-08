@@ -12,7 +12,7 @@ const query = 'water';
 l.log('path', `substitutePath generated ${path}`);
 l.log('action', 'user searched for', query); // will emit no output
 l.log('cql', () => [query, path]); // test ability to pass a function
-['cql', 'core', 'error'].map(cat => {
+for (const cat of ['cql', 'core', 'error']) {
   if (l.hasCategory(cat))
     console.log(`category ${cat} is on`);
-});
+}
