@@ -4,6 +4,16 @@ Copyright (C) 2017 The Open Library Foundation
 
 This software is distributed under the terms of the Apache License, Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
 
+<!-- ../okapi/doc/md2toc -l 2 README.md -->
+* [Introduction](#introduction)
+* [Example usage](#example-usage)
+* [API](#api)
+    * [Constructor](#constructor)
+    * [Setters](#setters)
+    * [Logging](#logging)
+    * [Category inquiry](#category-inquiry)
+
+
 ## Introduction
 
 Simple category-based logging for Stripes.
