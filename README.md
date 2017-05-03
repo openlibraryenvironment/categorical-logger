@@ -12,6 +12,7 @@ This software is distributed under the terms of the Apache License, Version 2.0.
     * [Setters](#setters)
     * [Logging](#logging)
     * [Category inquiry](#category-inquiry)
+* [Additional information](#additional-information)
 
 
 ## Introduction
@@ -77,3 +78,8 @@ Output is always to the JavaScript console.
 
 You can ask a logger whether it has a particular category enabled using `l.hasCategory(cat)`. This is a rather ugly back-door, but it's necessary for cases where another library does its own console-logging -- for example, [redux-logger](https://github.com/evgenyrodionov/redux-logger) -- and you need to create a predicate for it based on the logger's categories.
 
+## Additional information
+
+See [stripes-core](https://github.com/folio-org/stripes-core).
+
+Other FOLIO Developer documentation is at [dev.folio.org](http://dev.folio.org/)
