@@ -10,7 +10,7 @@
   "author": "Index Data",
   "license": "Apache-2.0",
   "scripts": {
-    "lint": "eslint *.js || true"
+    "lint": "eslint *.js"
   },
   "devDependencies": {
     "eslint": "^3.8.0",
