@@ -66,10 +66,10 @@ There are three of these, corresponding to the three arguments to the constructo
 
 All logging is done with a single method, `l.log(STRING, ...VALUES)`. Its first argument is a string naming one of the application's logging categories, and the subsequent arguments are values to be included in the log message. The message is emitted only if the specified category is one of those configured in the logger.
 
-If there is exactly one value, and that value is a function, when it is evaluated and its return value is logged. This is useful when generation of the log message is itself an expensive operation that should not be done if the message is not going to be emitted anyway (because its category is not configured). Use it like this;
+If there is exactly one value, and that value is a function, then it is evaluated and its return value is logged. This is useful when generation of the log message is itself an expensive operation that should not be done if the message is not going to be emitted anyway (because its category is not configured). Use it like this;
 
 ```
-l.log('hostname', () => lookUpHostNameByIP(hostName()));
+l.log('hostname', () => lookUpHostNameByIP(ipAddress));
 ```
 
 Output is always to the JavaScript console.
