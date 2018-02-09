@@ -1,12 +1,11 @@
 {
-  extends: "airbnb-base",
-  plugins: [
+  "extends": "@folio/eslint-config-stripes",
+  "plugins": [
     "import"
   ],
-  rules: {
+  "rules": {
     "no-console": "off",
     "curly": "off",
-    "prefer-template": "off",
-    "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"]
+    "prefer-template": "off"
   }
 }
