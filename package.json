@@ -10,11 +10,11 @@
   "author": "Index Data",
   "license": "Apache-2.0",
   "scripts": {
-    "lint": "eslint *.js"
+    "lint": "eslint *.js",
+    "test": "echo 0"
   },
   "devDependencies": {
-    "eslint": "^3.8.0",
-    "eslint-config-airbnb-base": "^11.1.0",
-    "eslint-plugin-import": "^2.2.0"
+    "eslint": "^4.8.0",
+    "@folio/eslint-config-stripes": "^1.1.0"
   }
 }
