@@ -1,6 +1,6 @@
 # stripes-logger
 
-Copyright (C) 2017 The Open Library Foundation
+Copyright (C) 2017-2018 The Open Library Foundation
 
 This software is distributed under the terms of the Apache License, Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
 
@@ -83,6 +83,6 @@ You can ask a logger whether it has a particular category enabled using `l.hasCa
 See [stripes-core](https://github.com/folio-org/stripes-core).
 
 See project [STRIPES](https://issues.folio.org/browse/STRIPES)
-at the [FOLIO issue tracker](http://dev.folio.org/community/guide-issues).
+at the [FOLIO issue tracker](https://dev.folio.org/guidelines/issue-tracker/).
 
-Other FOLIO Developer documentation is at [dev.folio.org](http://dev.folio.org/)
+Other FOLIO Developer documentation is at [dev.folio.org](https://dev.folio.org/)
