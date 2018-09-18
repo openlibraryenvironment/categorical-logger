@@ -4,8 +4,9 @@
     "import"
   ],
   "rules": {
-    "no-console": "off",
     "curly": "off",
+    "no-console": "off",
+    "nonblock-statement-body-position": "off",
     "prefer-template": "off"
   }
 }
