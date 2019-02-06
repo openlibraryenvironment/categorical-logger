@@ -1,13 +1,5 @@
 # categorical-logger
 
-<span style="color:red">**IMPORTANT NOTE**</span>: this package is deprecated. Use [`categorical-logger`](https://github.com/openlibraryenvironment/categorical-logger) instead. Version 1.0 of that is identical to version 1.0 of this, and all future development will take place under the new name.
-
-<hr />
-<br />
-<br />
-<br />
-<br />
-
 Copyright (C) 2017-2018 The Open Library Foundation
 
 This software is distributed under the terms of the Apache License, Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
