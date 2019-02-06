@@ -1,4 +1,9 @@
-# Change history for stripes-logger
+# Change history for categorical-logger
+
+## [1.0.0](https://github.com/openlibraryenvironment/categorical-logger/tree/v1.0.0) (2019-02-06)
+[No changelog]
+
+* Identical to `@folio/stripes-logger` v1.0.0. All that has happened is that it's been moved out of FOLIO's GitHub space into the Open Library Environment's, and now publishes to the main NPM registry as `categorical-logger` (with no namespace) rather than to the FOLIO NPM registry as `@folio/stripes-logger`.
 
 ## [1.0.0](https://github.com/folio-org/stripes-logger/tree/v1.0.0) (2018-09-18)
 [Full Changelog](https://github.com/folio-org/stripes-logger/compare/v0.0.2...v1.0.0)

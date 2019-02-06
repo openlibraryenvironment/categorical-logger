@@ -1,12 +1,9 @@
 {
-  "name": "@folio/stripes-logger",
+  "name": "categorical-logger",
   "version": "1.0.0",
-  "description": "Simple category-based logging for Stripes",
-  "repository": "folio-org/stripes-logger",
-  "publishConfig": {
-    "registry": "https://repository.folio.org/repository/npm-folio/"
-  },
-  "main": "stripes-logger.js",
+  "description": "Simple category-based logging",
+  "repository": "openlibraryenvironment/categorical-logger",
+  "main": "categorical-logger.js",
   "author": "Index Data",
   "license": "Apache-2.0",
   "scripts": {

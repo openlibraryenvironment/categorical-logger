@@ -1,4 +1,4 @@
-const Logger = require('./stripes-logger.js');
+const Logger = require('./categorical-logger.js');
 
 const l = new Logger('redux,action');
 

@@ -1,4 +1,4 @@
-# stripes-logger
+# categorical-logger
 
 Copyright (C) 2017-2018 The Open Library Foundation
 
@@ -19,14 +19,14 @@ This software is distributed under the terms of the Apache License, Version 2.0.
 
 Simple category-based logging for Stripes.
 
-By "category-based", we mean that stripes-logger can easily be configured to include or exclude different classes of log message (e.g. "app", "core", "calc", "okapiUrl", whatever we decide to include). This is much more flexible than the traditional approach of escalating levels DEBUG -> INFO -> WARN -> ERROR -> FATAL. (It can also of course be turned off completely in production.)
+By "category-based", we mean that categorical-logger can easily be configured to include or exclude different classes of log message (e.g. "app", "core", "calc", "okapiUrl", whatever we decide to include). This is much more flexible than the traditional approach of escalating levels DEBUG -> INFO -> WARN -> ERROR -> FATAL. (It can also of course be turned off completely in production.)
 
 It was created to fix issue https://issues.folio.org/browse/STRIPES-226 since, surprisingly, nothing similar seemed to exist.
 
 ## Example usage
 
 ```
-const Logger = require('./stripes-logger.js');
+const Logger = require('./categorical-logger.js');
 const l = new Logger('redux,action');
 l.setTimestamp(true);
 l.log('path', `substitutePath generated ${path}`);
@@ -78,11 +78,3 @@ Output is always to the JavaScript console.
 
 You can ask a logger whether it has a particular category enabled using `l.hasCategory(cat)`. This is a rather ugly back-door, but it's necessary for cases where another library does its own console-logging -- for example, [redux-logger](https://github.com/evgenyrodionov/redux-logger) -- and you need to create a predicate for it based on the logger's categories.
 
-## Additional information
-
-See [stripes-core](https://github.com/folio-org/stripes-core).
-
-See project [STRIPES](https://issues.folio.org/browse/STRIPES)
-at the [FOLIO issue tracker](https://dev.folio.org/guidelines/issue-tracker/).
-
-Other FOLIO Developer documentation is at [dev.folio.org](https://dev.folio.org/)
